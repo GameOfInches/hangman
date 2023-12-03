@@ -1,0 +1,120 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.game-container {
+  text-align: center;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 400px;
+}
+
+h2 {
+  color: #333;
+}
+
+.word-display {
+  font-size: 2rem;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.word-display span {
+  display: inline-block;
+  width: 2.5rem; /* Adjust the size as needed */
+  height: 2.5rem; /* Adjust the size as needed */
+  margin: 0.2rem;
+  background-color: #ddd;
+  border-radius: 0.5rem;
+  text-align: center;
+  line-height: 2.5rem;
+  cursor: pointer;
+}
+
+button {
+  font-size: 1rem;
+  margin: 0.5rem;
+  padding: 1rem 2rem;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.game-over,
+.victory {
+  font-size: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.game-over button,
+.victory button {
+  background-color: #333;
+}
+
+.game-over button:hover,
+.victory button:hover {
+  background-color: #555;
+}
+
+.game-over p,
+.victory p {
+  color: #d9534f;
+}
+
+.game-images {
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  transition: background-image 0.3s ease-in-out;
+}
+
+.image-0 {
+  background-image: url('./assets/hangman-0.png');
+}
+
+.image-1 {
+  background-image: url('./assets/hangman-1.png');
+}
+
+.image-2 {
+  background-image: url('./assets/hangman-2.png');
+}
+
+.image-3 {
+  background-image: url('./assets/hangman-3.png');
+}
+
+.image-4 {
+  background-image: url('./assets/hangman-4.png');
+}
+
+.image-5 {
+  background-image: url('./assets/hangman-5.png');
+}
+
+.image-6 {
+  background-image: url('./assets/hangman-6.png');
+}
